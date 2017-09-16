@@ -1,0 +1,40 @@
+{
+    "name": "nepada/meta-control",
+    "type": "library",
+    "license": "BSD-3-Clause",
+    "description": "Nette control for managing meta data in HTML header.",
+    "keywords": ["meta", "header", "component", "nette"],
+    "support": {
+        "email": "petr@pada.cz",
+        "issues": "https://github.com/nepada/meta-control/issues"
+    },
+    "authors": [
+        {
+            "name": "Petr Morávek",
+            "email": "petr@pada.cz"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "nette/utils": "^2.4@dev || 3.0@dev",
+        "nette/application": "^2.4@dev"
+    },
+    "require-dev": {
+        "nette/tester": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nepada\\MetaControl\\": "src/MetaControl/"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
