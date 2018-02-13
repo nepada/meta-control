@@ -3,7 +3,6 @@ declare(strict_types = 1);
 
 namespace NepadaTests\MetaControl;
 
-use Nepada;
 use Nepada\MetaControl\MetaControl;
 use Tester;
 use Tester\Assert;
@@ -20,7 +19,7 @@ class MetaControlTest extends Tester\TestCase
 
     public function testCharset(): void
     {
-        $control = new MetaControl;
+        $control = new MetaControl();
 
         Assert::same(null, $control->getCharset());
         Assert::same('', $this->getRenderingOutput($control));
@@ -36,7 +35,7 @@ class MetaControlTest extends Tester\TestCase
 
     public function testMetadata(): void
     {
-        $control = new MetaControl;
+        $control = new MetaControl();
 
         Assert::same(null, $control->getMetadata('author'));
         Assert::same(null, $control->getMetadata('description'));
@@ -60,7 +59,7 @@ class MetaControlTest extends Tester\TestCase
 
     public function testProperty(): void
     {
-        $control = new MetaControl;
+        $control = new MetaControl();
 
         Assert::same(null, $control->getProperty('og:title'));
         Assert::same(null, $control->getProperty('og:url'));
@@ -84,7 +83,7 @@ class MetaControlTest extends Tester\TestCase
 
     public function testPragma(): void
     {
-        $control = new MetaControl;
+        $control = new MetaControl();
 
         Assert::same(null, $control->getPragma('content-type'));
         Assert::same(null, $control->getPragma('refresh'));
@@ -108,7 +107,7 @@ class MetaControlTest extends Tester\TestCase
 
     public function testAuthor(): void
     {
-        $control = new MetaControl;
+        $control = new MetaControl();
 
         Assert::same(null, $control->getAuthor());
         Assert::same('', $this->getRenderingOutput($control));
@@ -124,7 +123,7 @@ class MetaControlTest extends Tester\TestCase
 
     public function testDescription(): void
     {
-        $control = new MetaControl;
+        $control = new MetaControl();
 
         Assert::same(null, $control->getDescription());
         Assert::same('', $this->getRenderingOutput($control));
@@ -140,7 +139,7 @@ class MetaControlTest extends Tester\TestCase
 
     public function testKeywords(): void
     {
-        $control = new MetaControl;
+        $control = new MetaControl();
 
         Assert::same([], $control->getKeywords());
         Assert::same('', $this->getRenderingOutput($control));
@@ -158,7 +157,7 @@ class MetaControlTest extends Tester\TestCase
 
     public function testRobots(): void
     {
-        $control = new MetaControl;
+        $control = new MetaControl();
 
         Assert::same(null, $control->getRobots());
         Assert::same('', $this->getRenderingOutput($control));
