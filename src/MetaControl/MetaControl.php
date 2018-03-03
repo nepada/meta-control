@@ -6,7 +6,6 @@ namespace Nepada\MetaControl;
 use Nette;
 use Nette\Utils\Html;
 
-
 class MetaControl extends Nette\Application\UI\Component
 {
 
@@ -26,7 +25,6 @@ class MetaControl extends Nette\Application\UI\Component
 
     /** @var string[] */
     private $pragmas = [];
-
 
     public function render(): void
     {
