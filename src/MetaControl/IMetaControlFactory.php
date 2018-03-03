@@ -7,9 +7,6 @@ namespace Nepada\MetaControl;
 interface IMetaControlFactory
 {
 
-    /**
-     * @return MetaControl
-     */
     public function create(): MetaControl;
 
 }

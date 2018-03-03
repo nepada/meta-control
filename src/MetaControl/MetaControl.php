@@ -44,35 +44,21 @@ class MetaControl extends Nette\Application\UI\Component
         }
     }
 
-    /**
-     * @return string|null
-     */
     public function getCharset(): ?string
     {
         return $this->charset;
     }
 
-    /**
-     * @param string|null $charset
-     */
     public function setCharset(?string $charset): void
     {
         $this->charset = $charset;
     }
 
-    /**
-     * @param string $name
-     * @return string|null
-     */
     public function getMetadata(string $name): ?string
     {
         return Nette\Utils\Arrays::get($this->metadata, $name, null);
     }
 
-    /**
-     * @param string $name
-     * @param string|null $content
-     */
     public function setMetadata(string $name, ?string $content): void
     {
         if ($content === null) {
@@ -82,19 +68,11 @@ class MetaControl extends Nette\Application\UI\Component
         }
     }
 
-    /**
-     * @param string $name
-     * @return string|null
-     */
     public function getProperty(string $name): ?string
     {
         return Nette\Utils\Arrays::get($this->properties, $name, null);
     }
 
-    /**
-     * @param string $property
-     * @param string|null $content
-     */
     public function setProperty(string $property, ?string $content): void
     {
         if ($content === null) {
@@ -104,19 +82,11 @@ class MetaControl extends Nette\Application\UI\Component
         }
     }
 
-    /**
-     * @param string $name
-     * @return string|null
-     */
     public function getPragma(string $name): ?string
     {
         return Nette\Utils\Arrays::get($this->pragmas, $name, null);
     }
 
-    /**
-     * @param string $httpEquiv
-     * @param string|null $content
-     */
     public function setPragma(string $httpEquiv, ?string $content): void
     {
         if ($content === null) {
@@ -126,33 +96,21 @@ class MetaControl extends Nette\Application\UI\Component
         }
     }
 
-    /**
-     * @return string|null
-     */
     public function getAuthor(): ?string
     {
         return $this->getMetadata(self::META_AUTHOR);
     }
 
-    /**
-     * @param string|null $author
-     */
     public function setAuthor(?string $author): void
     {
         $this->setMetadata(self::META_AUTHOR, $author);
     }
 
-    /**
-     * @return string|null
-     */
     public function getDescription(): ?string
     {
         return $this->getMetadata(self::META_DESCRIPTION);
     }
 
-    /**
-     * @param string|null $description
-     */
     public function setDescription(?string $description): void
     {
         $this->setMetadata(self::META_DESCRIPTION, $description);
@@ -181,9 +139,6 @@ class MetaControl extends Nette\Application\UI\Component
         }
     }
 
-    /**
-     * @param string $keyword
-     */
     public function addKeyword(string $keyword): void
     {
         $keywords = $this->getKeywords();
@@ -191,17 +146,11 @@ class MetaControl extends Nette\Application\UI\Component
         $this->setKeywords(...$keywords);
     }
 
-    /**
-     * @return string|null
-     */
     public function getRobots(): ?string
     {
         return $this->getMetadata(self::META_ROBOTS);
     }
 
-    /**
-     * @param string|null $robots
-     */
     public function setRobots(?string $robots): void
     {
         $this->setMetadata(self::META_ROBOTS, $robots);

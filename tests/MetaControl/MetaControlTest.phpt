@@ -171,10 +171,6 @@ class MetaControlTest extends Tester\TestCase
         Assert::same('', $this->getRenderingOutput($control));
     }
 
-    /**
-     * @param MetaControl $control
-     * @return string
-     */
     private function getRenderingOutput(MetaControl $control): string
     {
         ob_start();
