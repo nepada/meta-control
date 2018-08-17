@@ -174,7 +174,7 @@ class MetaControlTest extends TestCase
     {
         ob_start();
         $control->render();
-        return ob_get_clean();
+        return (string) ob_get_clean();
     }
 
 }
