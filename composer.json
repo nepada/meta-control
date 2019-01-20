@@ -20,7 +20,8 @@
         "nette/application": "^2.4@dev"
     },
     "require-dev": {
-        "nette/tester": "^2.1"
+        "nette/tester": "^2.1",
+        "xificurk/phpstan-shim": "^0.11"
     },
     "autoload": {
         "psr-4": {
