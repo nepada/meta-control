@@ -46,7 +46,7 @@ class MetaControlTest extends TestCase
         Assert::same('Lorem ipsum', $control->getMetadata('description'));
         Assert::same(
             "<meta name=\"author\" content=\"Jon Doe\">\n<meta name=\"description\" content=\"Lorem ipsum\">\n",
-            $this->getRenderingOutput($control)
+            $this->getRenderingOutput($control),
         );
 
         $control->setMetadata('author', null);
@@ -70,7 +70,7 @@ class MetaControlTest extends TestCase
         Assert::same('https://example.com', $control->getProperty('og:url'));
         Assert::same(
             "<meta property=\"og:title\" content=\"Foo title\">\n<meta property=\"og:url\" content=\"https://example.com\">\n",
-            $this->getRenderingOutput($control)
+            $this->getRenderingOutput($control),
         );
 
         $control->setProperty('og:title', null);
@@ -94,7 +94,7 @@ class MetaControlTest extends TestCase
         Assert::same('42', $control->getPragma('refresh'));
         Assert::same(
             "<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n<meta http-equiv=\"refresh\" content=\"42\">\n",
-            $this->getRenderingOutput($control)
+            $this->getRenderingOutput($control),
         );
 
         $control->setPragma('content-type', null);
