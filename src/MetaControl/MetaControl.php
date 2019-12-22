@@ -14,17 +14,16 @@ class MetaControl extends Nette\Application\UI\Component
     private const META_KEYWORDS = 'keywords';
     private const META_ROBOTS = 'robots';
 
-    /** @var string|null */
-    private $charset;
+    private ?string $charset = null;
 
     /** @var string[] */
-    private $metadata = [];
+    private array $metadata = [];
 
     /** @var string[] */
-    private $properties = [];
+    private array $properties = [];
 
     /** @var string[] */
-    private $pragmas = [];
+    private array $pragmas = [];
 
     public function render(): void
     {
@@ -123,9 +122,6 @@ class MetaControl extends Nette\Application\UI\Component
         return $keywords === null ? [] : array_map('trim', explode(',', $keywords));
     }
 
-    /**
-     * @param string[] ...$keywords
-     */
     public function setKeywords(string ...$keywords): void
     {
         if ($keywords === []) {
