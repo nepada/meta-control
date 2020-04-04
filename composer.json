@@ -33,7 +33,8 @@
     "autoload": {
         "psr-4": {
             "Nepada\\MetaControl\\": "src/MetaControl/"
-        }
+        },
+        "files": ["src/compatibility.php"]
     },
     "autoload-dev": {
         "psr-4": {

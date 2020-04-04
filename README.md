@@ -24,7 +24,7 @@ First register the control factory in your config and optionally set up default 
 ```yaml
 services:
     -
-        implement: Nepada\MetaControl\IMetaControlFactory
+        implement: Nepada\MetaControl\MetaControlFactory
         setup:
             - setCharset('utf-8')
             - setAuthor('Jon Doe')

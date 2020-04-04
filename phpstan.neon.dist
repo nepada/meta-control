@@ -14,3 +14,8 @@ parameters:
         uncheckedExceptions:
             - LogicException
             - Nette\InvalidStateException
+
+    ignoreErrors:
+        -
+            message: '#If condition is always false#'
+            path: src/compatibility.php
