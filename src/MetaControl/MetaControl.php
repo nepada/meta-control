@@ -16,13 +16,19 @@ class MetaControl extends Nette\Application\UI\Component
 
     private ?string $charset = null;
 
-    /** @var string[] */
+    /**
+     * @var string[]
+     */
     private array $metadata = [];
 
-    /** @var string[] */
+    /**
+     * @var string[]
+     */
     private array $properties = [];
 
-    /** @var string[] */
+    /**
+     * @var string[]
+     */
     private array $pragmas = [];
 
     public function render(): void
