@@ -1,7 +1,7 @@
 Meta Control
 ============
 
-[![Build Status](https://travis-ci.org/nepada/meta-control.svg?branch=master)](https://travis-ci.org/nepada/meta-control)
+[![Build Status](https://github.com/nepada/meta-control/workflows/CI/badge.svg)](https://github.com/nepada/meta-control/actions?query=workflow%3ACI+branch%3Amaster)
 [![Coverage Status](https://coveralls.io/repos/github/nepada/meta-control/badge.svg?branch=master)](https://coveralls.io/github/nepada/meta-control?branch=master)
 [![Downloads this Month](https://img.shields.io/packagist/dm/nepada/meta-control.svg)](https://packagist.org/packages/nepada/meta-control)
 [![Latest stable](https://img.shields.io/packagist/v/nepada/meta-control.svg)](https://packagist.org/packages/nepada/meta-control)
