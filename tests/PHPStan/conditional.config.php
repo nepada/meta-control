@@ -15,7 +15,7 @@ $isInstalled = function (string $packageName, string $versionConstraint) use ($v
 
 $config = [];
 
-if (! $isInstalled('nette/utils', '>=3.2.5')) {
+if (! $isInstalled('nette/utils', '>=3.2.5') && ! $isInstalled('nette/utils', 'dev-master')) {
     // unsupported generics template in nette/utils
     $config['parameters']['ignoreErrors'][] = [
         'message' => '~^Method Nepada\\\\MetaControl\\\\MetaControl::(getMetadata|getProperty|getPragma)\\(\\) should return string\\|null but returns mixed\\.~',
