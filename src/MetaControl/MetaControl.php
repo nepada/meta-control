@@ -17,17 +17,17 @@ class MetaControl extends Nette\Application\UI\Component
     private ?string $charset = null;
 
     /**
-     * @var string[]
+     * @var array<string, string>
      */
     private array $metadata = [];
 
     /**
-     * @var string[]
+     * @var array<string, string>
      */
     private array $properties = [];
 
     /**
-     * @var string[]
+     * @var array<string, string>
      */
     private array $pragmas = [];
 
@@ -120,7 +120,7 @@ class MetaControl extends Nette\Application\UI\Component
     }
 
     /**
-     * @return string[]
+     * @return list<string>
      */
     public function getKeywords(): array
     {
