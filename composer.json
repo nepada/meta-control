@@ -28,7 +28,7 @@
         "spaze/phpstan-disallowed-calls": "4.4.1",
         "shipmonk/phpstan-rules": "4.1.1",
         "php-parallel-lint/php-parallel-lint": "1.4.0",
-        "nepada/coding-standard": "7.14.1",
+        "nepada/coding-standard": "7.15",
         "composer-runtime-api": "^2.0",
         "composer/semver": "3.4.3",
         "nette/http": "*@dev"
