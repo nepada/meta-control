@@ -62,7 +62,10 @@ class MetaControl extends Nette\Application\UI\Component
         return Nette\Utils\Arrays::get($this->metadata, $name, null);
     }
 
-    public function setMetadata(string $name, ?string $content): void
+    public function setMetadata(
+        string $name,
+        ?string $content,
+    ): void
     {
         if ($content === null) {
             unset($this->metadata[$name]);
@@ -76,7 +79,10 @@ class MetaControl extends Nette\Application\UI\Component
         return Nette\Utils\Arrays::get($this->properties, $name, null);
     }
 
-    public function setProperty(string $property, ?string $content): void
+    public function setProperty(
+        string $property,
+        ?string $content,
+    ): void
     {
         if ($content === null) {
             unset($this->properties[$property]);
@@ -90,7 +96,10 @@ class MetaControl extends Nette\Application\UI\Component
         return Nette\Utils\Arrays::get($this->pragmas, $name, null);
     }
 
-    public function setPragma(string $httpEquiv, ?string $content): void
+    public function setPragma(
+        string $httpEquiv,
+        ?string $content,
+    ): void
     {
         if ($content === null) {
             unset($this->pragmas[$httpEquiv]);
